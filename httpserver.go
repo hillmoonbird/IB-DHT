@@ -125,7 +125,7 @@ func (h *httpGetter) Get(group string, key string) ([]byte, error) {
 	if err != nil {
 		return nil, err
 	}
-	// 确保 http 事务完成，相关资源得以回收
+	// 确保 http 的事务完成，相关资源得以回收
 	defer res.Body.Close()
 
 	if res.StatusCode != http.StatusOK {

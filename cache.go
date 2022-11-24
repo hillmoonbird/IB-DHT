@@ -13,7 +13,7 @@ type cache struct {
 	cacheBytes  int64
 }
 
-// 通过互斥锁实现并发的 add() 方法
+// 通过互斥锁实现并发的 add()方法
 func (c *cache) add(key string, val ByteView) {
 	c.mut.Lock()
 	defer c.mut.Unlock()

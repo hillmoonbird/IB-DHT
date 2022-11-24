@@ -4,7 +4,7 @@ import (
 	"sync"
 )
 
-// 代表正在进行中，或已经结束的请求
+// 代表正在进行中或已经结束的请求
 type call struct {
 	wg  sync.WaitGroup  // 避免重入的锁
 	val interface{}
