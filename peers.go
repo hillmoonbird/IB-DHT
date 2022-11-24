@@ -8,6 +8,6 @@ type PeerPicker interface {
 
 // HTTP 客户端
 type PeerGetter interface {
-	// 从对应的 group 查找缓存值
+	// 从对应 group 中查找缓存值
 	Get(group string, key string) ([]byte, error)
 }

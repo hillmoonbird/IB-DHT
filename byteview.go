@@ -22,7 +22,7 @@ func cloneBytes(b []byte) []byte {
 	return c
 }
 
-// 以拷贝的形式将 ByteView 中的 []byte 转换为 string
+// 以拷贝形式将 ByteView 中的 []byte 转换为 string
 func (v ByteView) String() string {
 	return string(v.b)
 }
