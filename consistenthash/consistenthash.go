@@ -9,7 +9,7 @@ import (
 // 哈希函数类型
 type Hash func(data []byte) uint32
 
-// 一致性哈希算法的主要数据结构
+// 一致性哈希算法数据结构
 type Map struct {
 	hash     Hash            // Hash 函数
 	replicas int             // 虚拟节点倍数

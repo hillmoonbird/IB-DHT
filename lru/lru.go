@@ -5,7 +5,7 @@ import (
 )
 
 
-// Cache 是一个 LRU 缓存，它是非并发安全的。
+// Cache 是一个 LRU 缓存，非并发安全
 type Cache struct {
 	maxBytes    int64                          // 允许使用的最大内存         
 	usedBytes   int64                          // 当前已使用的内存
